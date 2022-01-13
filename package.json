@@ -1,0 +1,31 @@
+{
+    "name": "provn-language",
+    "displayName": "PROV-N Language Support",
+    "description": "Language support for the W3C PROV-N syntax for provenance",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "provn",
+            "aliases": ["Provenance Notation (PROV-N)", "provn"],
+            "extensions": [".provn"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "provn",
+            "scopeName": "source.provn",
+            "path": "./syntaxes/provn.tmLanguage"
+        }],
+        "snippets": [
+            {
+                "language": "provn",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}

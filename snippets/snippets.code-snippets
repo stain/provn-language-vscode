@@ -1,0 +1,158 @@
+{
+	"act": {
+		"prefix": "act",
+		"body": "actedOnBehalfOf($1, $2, -$3, [$4])",
+		"description": "actedOnBehalfOf",
+		"scope": "source.provn"
+	},
+	"ac": {
+		"prefix": "ac",
+		"body": "activity($1, -$2, -$3, [$4])",
+		"description": "activity",
+		"scope": "source.provn"
+	},
+	"ag": {
+		"prefix": "ag",
+		"body": "agent($1, [$2])",
+		"description": "agent",
+		"scope": "source.provn"
+	},
+	"al": {
+		"prefix": "al",
+		"body": "alternateOf($1, $2)",
+		"description": "alternateOf",
+		"scope": "source.provn"
+	},
+	"bu": {
+		"prefix": "bu",
+		"body": "bundle ex:b$1\n  $2\nendBundle",
+		"description": "bundle",
+		"scope": "source.provn"
+	},
+	"doc": {
+		"prefix": "doc",
+		"body": "document\n  prefix ex$2 <http://example.org$3>\n  \n  $1\nendDocument",
+		"description": "document",
+		"scope": "source.provn"
+	},
+	"en": {
+		"prefix": "en",
+		"body": "entity($1, [$2])",
+		"description": "entity",
+		"scope": "source.provn"
+	},
+	"ha": {
+		"prefix": "ha",
+		"body": "hadMember($1, $2)",
+		"description": "hadMember",
+		"scope": "source.provn"
+	},
+	"pr": {
+		"prefix": "pr",
+		"body": "wasDerivedFrom($1, $2, -, -, -, [prov:type='prov:PrimarySource'])",
+		"description": "primarySource",
+		"scope": "source.provn"
+	},
+	"l": {
+		"prefix": "l",
+		"body": "prov:label=\"$1\"",
+		"description": "prov:label",
+		"scope": "meta.attributes-block.provn"
+	},
+	"r": {
+		"prefix": "r",
+		"body": "prov:role='$1'",
+		"description": "prov:role",
+		"scope": "meta.attributes-block.provn"
+	},
+	"t": {
+		"prefix": "t",
+		"body": "prov:type='$1'",
+		"description": "prov:type",
+		"scope": "meta.attributes-block.provn"
+	},
+	"v": {
+		"prefix": "v",
+		"body": "prov:value=",
+		"description": "prov:value",
+		"scope": "meta.attributes-block.provn"
+	},
+	"qu": {
+		"prefix": "qu",
+		"body": "wasDerivedFrom($1, $2, -, -, -, [prov:type='prov:Quotation'])",
+		"description": "quotation",
+		"scope": "source.provn"
+	},
+	"re": {
+		"prefix": "re",
+		"body": "wasDerivedFrom($1, $2, -, -, -, [prov:type='prov:Revision'])",
+		"description": "revision",
+		"scope": "source.provn"
+	},
+	"sp": {
+		"prefix": "sp",
+		"body": "specializationOf($1, $2)",
+		"description": "specializationOf",
+		"scope": "source.provn"
+	},
+	"u": {
+		"prefix": "u",
+		"body": "used($1, $2, -$3)",
+		"description": "used",
+		"scope": "source.provn"
+	},
+	"as": {
+		"prefix": "as",
+		"body": "wasAssociatedWith($1, $2, -$3, [$4])",
+		"description": "wasAssociatedWith",
+		"scope": "source.provn"
+	},
+	"wa": {
+		"prefix": "wa",
+		"body": "wasAttributedTo($1, $2, [$3])",
+		"description": "wasAttributedTo",
+		"scope": "source.provn"
+	},
+	"wd": {
+		"prefix": "wd",
+		"body": "wasDerivedFrom($1, $2, -, -, -, [$3])",
+		"description": "wasDerivedFrom",
+		"scope": "source.provn"
+	},
+	"we": {
+		"prefix": "we",
+		"body": "wasEndedBy($1, -$2, -$3, -$4)",
+		"description": "wasEndedBy",
+		"scope": "source.provn"
+	},
+	"wg": {
+		"prefix": "wg",
+		"body": "wasGeneratedBy($1, $2, -$3)",
+		"description": "wasGeneratedBy",
+		"scope": "source.provn"
+	},
+	"inf": {
+		"prefix": "inf",
+		"body": "wasInfluencedBy($1, $2, [$3])",
+		"description": "wasInfluencedBy",
+		"scope": "source.provn"
+	},
+	"wi": {
+		"prefix": "wi",
+		"body": "wasInformedBy($1, $2)",
+		"description": "wasInformedBy",
+		"scope": "source.provn"
+	},
+	"wi1": {
+		"prefix": "wi",
+		"body": "wasInvalidatedBy($1, -$2, -$3)",
+		"description": "wasInvalidatedBy",
+		"scope": "source.provn"
+	},
+	"ws": {
+		"prefix": "ws",
+		"body": "wasStartedBy($1, -$2, -$3, -$4)",
+		"description": "wasStartedBy",
+		"scope": "source.provn"
+	}
+}
